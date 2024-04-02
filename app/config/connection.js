@@ -7,13 +7,14 @@ const mysql = require("mysql");
 
 //set up our connection information
 
-const connection = mysql.createConnection({
-    host:"localhost",
-    port:3306,
-    user:"root",
-    password:"Christ001++",
-    database:"chirpy"
-})
+var connection = mysql.createConnection({
+    port: 3306,
+    host: "localhost",
+    user: "root",
+    password: "Chris001++",
+    database: "chirpy"
+  });
+  
 
 //Connect to the database
 connection.connect(function(err){
